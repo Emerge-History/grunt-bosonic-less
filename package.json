@@ -1,6 +1,6 @@
 {
   "name": "grunt-bosonic-less",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "> A Grunt task that transpiles to-the-spec Web Components into polyfilled JavaScript",
   "main": "Gruntfile.js",
   "scripts": {
@@ -34,7 +34,8 @@
     "grunt": "0.4.x"
   },
   "contributors": [
-    "Raphaël Rougeron <goldoraf@gmail.com>"
+    "Raphaël Rougeron <goldoraf@gmail.com>",
+    "emerge <0@emerge.cc>"
   ],
   "homepage": "https://github.com/emerge/grunt-bosonic-less",
   "keywords": [
