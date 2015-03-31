@@ -1,6 +1,6 @@
 {
   "name": "grunt-bosonic-less",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> A Grunt task that transpiles to-the-spec Web Components into polyfilled JavaScript",
   "main": "Gruntfile.js",
   "scripts": {
@@ -10,17 +10,14 @@
     "type": "git",
     "url": "git://github.com/emerge/grunt-bosonic-less.git"
   },
-  "author": {
-    "name": "Raphaël Rougeron",
-    "email": "goldoraf@gmail.com"
-  },
+  "author": "Raphaël Rougeron <goldoraf@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/emerge/grunt-bosonic-less/issues"
   },
   "dependencies": {
     "async": "*",
-    "less" : "*",
+    "less": "*",
     "underscore": "~1.6.0",
     "cheerio": "~0.13.1",
     "esprima": "~1.0.4",
@@ -36,13 +33,13 @@
   "peerDependencies": {
     "grunt": "0.4.x"
   },
-  "readme": "# grunt-bosonic\n\n> A Grunt task that transpiles to-the-spec Web Components into polyfilled JavaScript\n\n## Getting Started\nThis plugin requires Grunt `~0.4.2`\n\nIf you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-bosonic --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks('grunt-bosonic');\n```\n\n## The \"bosonic\" task\n\n### Usage\nIn your project's Gruntfile, add a section named `bosonic` to the data object passed into `grunt.initConfig()`.\n\n```js\ngrunt.initConfig({\n  bosonic: {\n    my_components: {\n      src: ['src/**/*.html'],\n      css: 'dist/components.css',\n      js:  'dist/components.js'\n  }\n});\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n_(Nothing yet)_",
-  "readmeFilename": "README.md",
   "contributors": [
-    {
-      "name": "Raphaël Rougeron",
-      "email": "goldoraf@gmail.com"
-    }
+    "Raphaël Rougeron <goldoraf@gmail.com>"
   ],
-  "homepage": "https://github.com/emerge/grunt-bosonic-less"
+  "homepage": "https://github.com/emerge/grunt-bosonic-less",
+  "keywords": [
+    "bosonic",
+    "less",
+    "grunt"
+  ]
 }
