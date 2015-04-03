@@ -1,6 +1,6 @@
 {
   "name": "grunt-bosonic-less",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "> A Grunt task that transpiles to-the-spec Web Components into polyfilled JavaScript",
   "main": "Gruntfile.js",
   "scripts": {
