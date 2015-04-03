@@ -46,8 +46,8 @@ module.exports = function (grunt) {
                 cssFile = _this.data.css;
             grunt.file.write(jsFile, js.join("\n"));
             grunt.file.write(cssFile, css.join("\n"));
-            if (err) grunt.warn(err);
-            done(err);
+            if (err) grunt.log.error(err);
+            done();
         });
     });
 
