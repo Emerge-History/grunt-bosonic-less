@@ -24,7 +24,7 @@ module.exports = function (grunt) {
             var fileDir = path.dirname(filepath);
 
             jobs.push(function (cb) {
-                transpiler.transpile(grunt.file.read(filepath), function (err, transpiled) {
+                transpiler.transpile(filepath, grunt.file.read(filepath), function (err, transpiled) {
                     transpiled.stylesheets.forEach(function (href) {
                         css.push(grunt.file.read(fileDir + '/' + href));
                     });
