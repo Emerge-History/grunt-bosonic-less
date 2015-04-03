@@ -24,7 +24,9 @@ module.exports = function (grunt) {
             var fileDir = path.dirname(filepath);
 
             jobs.push(function (cb) {
+                console.log(filepath);
                 transpiler.transpile(filepath, grunt.file.read(filepath), function (err, transpiled) {
+                    if (err) return cb(err);
                     transpiled.stylesheets.forEach(function (href) {
                         css.push(grunt.file.read(fileDir + '/' + href));
                     });
@@ -33,7 +35,7 @@ module.exports = function (grunt) {
                         js.push(grunt.file.read(fileDir + '/' + src));
                     });
                     js.push(transpiled.js);
-                    cb(err);
+                    return cb(err);
                 });
             });
         });
@@ -44,6 +46,7 @@ module.exports = function (grunt) {
                 cssFile = _this.data.css;
             grunt.file.write(jsFile, js.join("\n"));
             grunt.file.write(cssFile, css.join("\n"));
+            if (err) grunt.warn(err);
             done(err);
         });
     });
